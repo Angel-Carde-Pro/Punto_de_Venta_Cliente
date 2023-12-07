@@ -35,6 +35,8 @@ public class Productos_Dialog extends javax.swing.JFrame {
         txtNombre2 = new javax.swing.JTextField();
         txtNombre3 = new javax.swing.JTextField();
         lbl_telefono3 = new javax.swing.JLabel();
+        lbl_sexo2 = new javax.swing.JLabel();
+        jComboBoxSexo2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -115,6 +117,13 @@ public class Productos_Dialog extends javax.swing.JFrame {
         lbl_telefono3.setText("ID PROVEEDOR: ");
         jPanel1.add(lbl_telefono3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, -1, -1));
 
+        lbl_sexo2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lbl_sexo2.setText("Clasificación:");
+        jPanel1.add(lbl_sexo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, -1));
+
+        jComboBoxSexo2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Example1", "Example2" }));
+        jPanel1.add(jComboBoxSexo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, 120, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -143,6 +152,7 @@ public class Productos_Dialog extends javax.swing.JFrame {
     private javax.swing.JButton btnCancelar;
     private javax.swing.JComboBox<String> jComboBoxSexo;
     private javax.swing.JComboBox<String> jComboBoxSexo1;
+    private javax.swing.JComboBox<String> jComboBoxSexo2;
     private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelTitulo;
@@ -152,6 +162,7 @@ public class Productos_Dialog extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_nombre2;
     private javax.swing.JLabel lbl_sexo;
     private javax.swing.JLabel lbl_sexo1;
+    private javax.swing.JLabel lbl_sexo2;
     private javax.swing.JLabel lbl_telefono;
     private javax.swing.JLabel lbl_telefono1;
     private javax.swing.JLabel lbl_telefono2;
