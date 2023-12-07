@@ -12,7 +12,6 @@ public class Controller_Login {
 
     public Controller_Login(Login_View login_View) {
         this.login_View = login_View;
-        //this.user = user;
     }
 
     public void IniciarControl() {
@@ -26,6 +25,21 @@ public class Controller_Login {
                 RegistrarseBtn();
             }
         });
+        
+        login_View.getjBtnLogin().addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                IniciarSesion();
+            }
+        });
+    }
+    
+    public void IniciarSesion()
+    {
+        login_View.dispose();
+        Main_View ml = new Main_View();
+        Controller_Main cr1 = new Controller_Main(ml);
+        cr1.IniciarControl();
     }
 
     public void RegistrarseBtn() {
