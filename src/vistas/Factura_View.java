@@ -11,15 +11,7 @@ public class Factura_View extends javax.swing.JPanel {
     public Factura_View() {
         initComponents();
     }
-
-    public JButton getBtnActualizar() {
-        return btnActualizar;
-    }
-
-    public void setBtnActualizar(JButton btnActualizar) {
-        this.btnActualizar = btnActualizar;
-    }
-
+    
     public JButton getBtnBuscar() {
         return btnBuscar;
     }
@@ -34,22 +26,6 @@ public class Factura_View extends javax.swing.JPanel {
 
     public void setBtnCrear(JButton btnCrear) {
         this.btnCrear = btnCrear;
-    }
-
-    public JButton getBtnEditar() {
-        return btnEditar;
-    }
-
-    public void setBtnEditar(JButton btnEditar) {
-        this.btnEditar = btnEditar;
-    }
-
-    public JButton getBtnEliminar() {
-        return btnEliminar;
-    }
-
-    public void setBtnEliminar(JButton btnEliminar) {
-        this.btnEliminar = btnEliminar;
     }
 
     public JPanel getjPanel1() {
