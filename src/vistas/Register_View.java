@@ -1,6 +1,7 @@
 package vistas;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
@@ -122,6 +123,54 @@ public class Register_View extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    public JButton getBtnRegistrar() {
+        return btnRegistrar;
+    }
+
+    public JTextField getTxtCedula() {
+        return txtCedula;
+    }
+
+    public void setTxtCedula(JTextField txtCedula) {
+        this.txtCedula = txtCedula;
+    }
+
+    public JTextField getTxtDirreccion() {
+        return txtDirreccion;
+    }
+
+    public void setTxtDirreccion(JTextField txtDirreccion) {
+        this.txtDirreccion = txtDirreccion;
+    }
+
+    public JTextField getTxtEmail() {
+        return txtEmail;
+    }
+
+    public void setTxtEmail(JTextField txtEmail) {
+        this.txtEmail = txtEmail;
+    }
+
+    public JTextField getTxtNTelefono() {
+        return txtNTelefono;
+    }
+
+    public void setTxtNTelefono(JTextField txtNTelefono) {
+        this.txtNTelefono = txtNTelefono;
+    }
+
+    public void setBtnRegistrar(JButton btnRegistrar) {
+        this.btnRegistrar = btnRegistrar;
+    }
+
+    public JComboBox<String> getjComboBox1() {
+        return jComboBox1;
+    }
+
+    public void setjComboBox1(JComboBox<String> jComboBox1) {
+        this.jComboBox1 = jComboBox1;
+    }
 
 
     public JLabel getLblmensajeerror() {
