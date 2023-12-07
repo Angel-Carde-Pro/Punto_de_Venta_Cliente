@@ -1,5 +1,7 @@
 package vistas;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author Angel
@@ -10,6 +12,15 @@ public class Productos_Dialog extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getBtnGuardar() {
+        return btnGuardar;
+    }
+
+    public void setBtnGuardar(JButton btnGuardar) {
+        this.btnGuardar = btnGuardar;
+    }
+
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -21,7 +32,7 @@ public class Productos_Dialog extends javax.swing.JFrame {
         txtNombre = new javax.swing.JTextField();
         lbl_telefono = new javax.swing.JLabel();
         lbl_sexo = new javax.swing.JLabel();
-        btnAceptar = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         jComboBoxSexo = new javax.swing.JComboBox<>();
         lbl_id = new javax.swing.JLabel();
@@ -68,11 +79,11 @@ public class Productos_Dialog extends javax.swing.JFrame {
         lbl_sexo.setText("Proveedor:");
         jPanel1.add(lbl_sexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
 
-        btnAceptar.setBackground(new java.awt.Color(86, 148, 229));
-        btnAceptar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        btnAceptar.setForeground(new java.awt.Color(255, 255, 255));
-        btnAceptar.setText("Guardar");
-        jPanel1.add(btnAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 120, 40));
+        btnGuardar.setBackground(new java.awt.Color(86, 148, 229));
+        btnGuardar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardar.setText("Guardar");
+        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 120, 40));
 
         btnCancelar.setBackground(new java.awt.Color(72, 169, 72));
         btnCancelar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
@@ -148,8 +159,8 @@ public class Productos_Dialog extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAceptar;
     private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnGuardar;
     private javax.swing.JComboBox<String> jComboBoxSexo;
     private javax.swing.JComboBox<String> jComboBoxSexo1;
     private javax.swing.JComboBox<String> jComboBoxSexo2;
