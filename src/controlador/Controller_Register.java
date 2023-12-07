@@ -66,7 +66,7 @@ public class Controller_Register {
         return idRol;
     }
     public void VolverBtn() {
-        register_View.dispose();;
+        register_View.dispose();
         Login_View vl = new Login_View();
         Controller_Login ctl = new Controller_Login(vl);
         ctl.IniciarControl();
