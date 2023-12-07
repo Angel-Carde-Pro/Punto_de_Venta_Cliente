@@ -1,13 +1,14 @@
 package controlador;
 
 import vistas.*;
+import ws.Peticiones;
+import ws.Peticiones_Service;
 
 /**
  *
  * @author angel
  */
 public class Controller_Login {
-
     private Login_View login_View;
 
     public Controller_Login(Login_View login_View) {

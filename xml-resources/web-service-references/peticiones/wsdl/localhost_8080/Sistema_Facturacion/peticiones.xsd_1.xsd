@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="buscarP" type="tns:buscarP"/>
+
+<xs:element name="buscarPResponse" type="tns:buscarPResponse"/>
+
+<xs:element name="crearProducto" type="tns:crearProducto"/>
+
+<xs:element name="crearProductoResponse" type="tns:crearProductoResponse"/>
+
+<xs:element name="estadorol" type="tns:estadorol"/>
+
+<xs:element name="estadorolResponse" type="tns:estadorolResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="loginUsuario" type="tns:loginUsuario"/>
+
+<xs:element name="loginUsuarioResponse" type="tns:loginUsuarioResponse"/>
+
+<xs:element name="nombreCompl" type="tns:nombreCompl"/>
+
+<xs:element name="nombreComplResponse" type="tns:nombreComplResponse"/>
+
+<xs:element name="registrarUsuarioPersonaRol" type="tns:registrarUsuarioPersonaRol"/>
+
+<xs:element name="registrarUsuarioPersonaRolResponse" type="tns:registrarUsuarioPersonaRolResponse"/>
+
+<xs:element name="siexisteComp" type="tns:siexisteComp"/>
+
+<xs:element name="siexisteCompResponse" type="tns:siexisteCompResponse"/>
+
+<xs:element name="siexisterol" type="tns:siexisterol"/>
+
+<xs:element name="siexisterolResponse" type="tns:siexisterolResponse"/>
+
+<xs:complexType name="loginUsuario">
+<xs:sequence>
+<xs:element name="nombreUsuario" type="xs:string" minOccurs="0"/>
+<xs:element name="passwordUsuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="siexisterol">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="siexisterolResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estadorol">
+<xs:sequence>
+<xs:element name="nombrerol" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estadorolResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarUsuarioPersonaRol">
+<xs:sequence>
+<xs:element name="idUsuario" type="xs:int"/>
+<xs:element name="idPersona" type="xs:int"/>
+<xs:element name="nombreUsuario" type="xs:string" minOccurs="0"/>
+<xs:element name="passwordUsuario" type="xs:string" minOccurs="0"/>
+<xs:element name="nombrePersona" type="xs:string" minOccurs="0"/>
+<xs:element name="apellidoPersona" type="xs:string" minOccurs="0"/>
+<xs:element name="dniPersona" type="xs:string" minOccurs="0"/>
+<xs:element name="celularPersona" type="xs:string" minOccurs="0"/>
+<xs:element name="correoPersona" type="xs:string" minOccurs="0"/>
+<xs:element name="idRol" type="xs:int"/>
+<xs:element name="nombreRol" type="xs:string" minOccurs="0"/>
+<xs:element name="estadoRol" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarUsuarioPersonaRolResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nombreCompl">
+<xs:sequence>
+<xs:element name="nombreCompleto" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nombreComplResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="siexisteComp">
+<xs:sequence>
+<xs:element name="idcomp" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="siexisteCompResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearProducto">
+<xs:sequence>
+<xs:element name="idProducto" type="xs:int"/>
+<xs:element name="stock" type="xs:int"/>
+<xs:element name="precioUnitario" type="xs:double"/>
+<xs:element name="unidad" type="xs:string" minOccurs="0"/>
+<xs:element name="idClasificacion" type="tns:clasificacion" minOccurs="0"/>
+<xs:element name="idProveedor" type="tns:proveedores" minOccurs="0"/>
+<xs:element name="iva" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="clasificacion">
+<xs:sequence>
+<xs:element name="grupo" type="xs:string" minOccurs="0"/>
+<xs:element name="id_clasificacion" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="proveedores">
+<xs:sequence>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="id_proveedor" type="xs:int"/>
+<xs:element name="moneda" type="xs:string" minOccurs="0"/>
+<xs:element name="pais" type="xs:string" minOccurs="0"/>
+<xs:element name="ruc" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearProductoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarP">
+<xs:sequence>
+<xs:element name="dni" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
