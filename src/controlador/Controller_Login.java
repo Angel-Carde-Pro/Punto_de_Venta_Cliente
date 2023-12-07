@@ -18,14 +18,30 @@ public class Controller_Login {
         login_View.setTitle("Login");
         login_View.setVisible(true);
         login_View.setLocationRelativeTo(null);
-
+        
+        login_View.getPassTxt().addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                if (evt.getKeyChar() == '\n') {
+                    IniciarSesion();
+                }
+            }
+        });
+        
+        login_View.getUserTxt().addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                if (evt.getKeyChar() == '\n') {
+                    IniciarSesion();
+                }
+            }
+        });
+        
         login_View.getjBtnREGISTER().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 RegistrarseBtn();
             }
         });
-        
+
         login_View.getjBtnLogin().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -33,9 +49,8 @@ public class Controller_Login {
             }
         });
     }
-    
-    public void IniciarSesion()
-    {
+
+    public void IniciarSesion() {
         login_View.dispose();
         Main_View ml = new Main_View();
         Controller_Main cr1 = new Controller_Main(ml);
