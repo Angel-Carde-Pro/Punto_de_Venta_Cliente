@@ -10,7 +10,6 @@ import ws.Peticiones_Service;
  * @author angel
  */
 public class Controller_Login {
-
     private Login_View login_View;
     Peticiones_Service service = new Peticiones_Service();
     Peticiones cliente = service.getPeticionesPort();

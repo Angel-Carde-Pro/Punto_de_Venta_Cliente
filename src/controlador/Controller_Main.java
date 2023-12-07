@@ -1,13 +1,15 @@
 package controlador;
 
 import vistas.*;
+import ws.Peticiones;
+import ws.Peticiones_Service;
 
 /**
  *
  * @author angel
  */
 public class Controller_Main {
-
+    
     private Main_View main_View;
 
     public Controller_Main(Main_View main_View) {
@@ -15,6 +17,7 @@ public class Controller_Main {
     }
 
     public void IniciarControl() {
+        
         main_View.setTitle("MENU");
         main_View.setVisible(true);
         main_View.setLocationRelativeTo(null);
