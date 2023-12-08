@@ -236,7 +236,7 @@
         <Component class="javax.swing.JTextField" name="txtnombrecompe1">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="90" y="230" width="169" height="-1"/>
+              <AbsoluteConstraints x="110" y="230" width="169" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>

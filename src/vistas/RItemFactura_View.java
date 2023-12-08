@@ -98,7 +98,7 @@ public class RItemFactura_View extends javax.swing.JFrame {
 
         jLabel7.setText("Descripcion:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
-        jPanel1.add(txtnombrecompe1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 169, -1));
+        jPanel1.add(txtnombrecompe1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 169, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
