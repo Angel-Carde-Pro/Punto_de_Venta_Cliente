@@ -2,4 +2,8 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="http://localhost:8080/Sistema_Facturacion/peticiones?WSDL" uri="wsdl/localhost_8080/Sistema_Facturacion/peticiones.wsdl"/>
     <system systemId="http://localhost:8080/Sistema_Facturacion/peticiones?xsd=1" uri="wsdl/localhost_8080/Sistema_Facturacion/peticiones.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Punto_de_Venta_Servidor/WsPeticiones?WSDL" uri="wsdl/localhost_8080/Punto_de_Venta_Servidor/WsPeticiones.wsdl"/>
+    <system systemId="http://localhost:8080/Punto_de_Venta_Servidor/WsPeticiones?xsd=1" uri="wsdl/localhost_8080/Punto_de_Venta_Servidor/WsPeticiones.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Punto_de_Venta_Servidor/peticiones?WSDL" uri="wsdl/localhost_8080/Punto_de_Venta_Servidor/peticiones.wsdl"/>
+    <system systemId="http://localhost:8080/Punto_de_Venta_Servidor/peticiones?xsd=1" uri="wsdl/localhost_8080/Punto_de_Venta_Servidor/peticiones.xsd_1.xsd"/>
 </catalog>
