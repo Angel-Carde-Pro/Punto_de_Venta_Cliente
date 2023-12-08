@@ -35,7 +35,7 @@ public class Controller_Main {
         main_View.getjButtonFac().addMouseListener( new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                Factura_View p2 = new Factura_View();
+                Factura_Viewer p2 = new Factura_Viewer();
                 Controller_Factura control = new Controller_Factura(p2);
                 control.iniciarcontrol();
             }

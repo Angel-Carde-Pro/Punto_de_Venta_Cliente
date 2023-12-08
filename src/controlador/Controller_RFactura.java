@@ -147,15 +147,13 @@ public class Controller_RFactura {
 
     public void mostrarproductostabla() {
     try {
+        double sub = calcularsubtotal();
         String id = vision.getJlabelidproducto().getText();
         String PrecioU = vision.getTxtprecioU().getText();
-        String Unidad = vision.getTxtNombre().getText();
-        String iva = vision.getjComboiva().getSelectedItem().toString();
         int cantidad = (int) vision.getJSpinnercantidad().getValue();
-        double sub = calcularsubtotal();
 
         // Create an array to store the data for the new row
-        Object[] data = {id, PrecioU, Unidad, iva, cantidad, sub};
+        Object[] data = {id, PrecioU, "SampleName", "SampleIVA", cantidad, sub};
 
         // Get the table model and add the new row
         DefaultTableModel modeloTabla = (DefaultTableModel) Rfactura_view.getTblPROD().getModel();
@@ -168,6 +166,8 @@ public class Controller_RFactura {
         JOptionPane.showMessageDialog(Rfactura_view, e);
     }
 }
+
+
 
 
     public double calcularTotal(DefaultTableModel modeloTabla) {
