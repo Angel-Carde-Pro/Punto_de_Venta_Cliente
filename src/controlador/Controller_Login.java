@@ -1,5 +1,6 @@
 package controlador;
 
+import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import vistas.*;
 import ws.Peticiones;
@@ -10,6 +11,7 @@ import ws.Peticiones_Service;
  * @author angel
  */
 public class Controller_Login {
+
     private Login_View login_View;
     Peticiones_Service service = new Peticiones_Service();
     Peticiones cliente = service.getPeticionesPort();
@@ -30,13 +32,27 @@ public class Controller_Login {
     }
 
     public void IniciarSesion() {
-        
+
         if (Validaciones()) {
-            login_View.dispose();
-            Main_View ml = new Main_View();
-            Controller_Main cr1 = new Controller_Main(ml);
-            cr1.IniciarControl();
+            String usuario = login_View.getUserTxt().getText();
+            char[] passchars = login_View.getPassTxt().getPassword();
+            String contraseña = new String(passchars);
+            
+            
+            String a = cliente.loginUsuario(usuario, contraseña);
+            login_View.setTitle(a);
+            if (a.contains("exitoso")) {
+                 login_View.dispose();
+                Main_View ml = new Main_View();
+                Controller_Main cr1 = new Controller_Main(ml);
+                cr1.IniciarControl();
+            }else{
+                JOptionPane.showMessageDialog(login_View,"Usuario o Contraseña incorrectos");
+            }
+               
+            
         }
+
     }
 
     public boolean Validaciones() {
