@@ -1,8 +1,6 @@
 package controlador;
 
-import vistas.Factura_View;
-import vistas.Login_View;
-import vistas.RFacturas_view;
+import vistas.*;
 
 /**
  *
@@ -20,9 +18,9 @@ public class Controller_Factura {
         facturaview.getBtnCrear().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                RFacturas_view rl = new RFacturas_view();
-                Controller_RFactura cr1 = new Controller_RFactura(rl);
-                cr1.iniciarcontrol();
+                Productos_Dialog rl = new Productos_Dialog();
+                Controller_Add_Prod cr1 = new Controller_Add_Prod(rl);
+                cr1.IniciarControl();
             }
         });
     }
