@@ -94,7 +94,7 @@ public class RevisionProductos_Voew extends javax.swing.JFrame {
 
         jLabel11.setText("ID Producto");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
-        jPanel1.add(JSpinnercantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
+        jPanel1.add(JSpinnercantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, -1));
 
         jPanel1.add(jComboCateg, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 160, -1));
 
@@ -102,7 +102,7 @@ public class RevisionProductos_Voew extends javax.swing.JFrame {
 
         jPanel1.add(jComboProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 160, -1));
         jPanel1.add(jLabelsubtotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 430, 80, 20));
-        jPanel1.add(JSpinnerStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, -1));
+        jPanel1.add(JSpinnerStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
 
         jLabel10.setText("Cantidad:");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 80, -1));

@@ -8,9 +8,9 @@ import javax.swing.JTable;
  *
  * @author joe
  */
-public class Productos_View extends javax.swing.JFrame {
+public class Factura_Viewer extends javax.swing.JFrame {
 
-    public Productos_View() {
+    public Factura_Viewer() {
         initComponents();
     }
 
@@ -64,7 +64,7 @@ public class Productos_View extends javax.swing.JFrame {
 
         jPanel1.setOpaque(false);
 
-        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 
         txt_Buscar.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         txt_Buscar.setText("Buscar");

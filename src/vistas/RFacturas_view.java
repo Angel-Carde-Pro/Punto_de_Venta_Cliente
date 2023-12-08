@@ -62,7 +62,7 @@ public class RFacturas_view extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 80, -1));
 
         jLabel8.setText("Descuento: ");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 480, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 600, -1, -1));
         jPanel1.add(txtruc, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 240, -1));
         jPanel1.add(lblmensajeerror, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 503, 320, -1));
 
@@ -82,32 +82,32 @@ public class RFacturas_view extends javax.swing.JFrame {
         btnRegistrar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistrar.setText("Crear Factura");
-        jPanel1.add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, 160, 40));
+        jPanel1.add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 630, 160, 40));
 
         jLabel9.setText("Fecha:");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, 59, -1));
 
         jlabeltotal.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jPanel1.add(jlabeltotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 520, 160, 30));
+        jPanel1.add(jlabeltotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 640, 160, 30));
 
         btnVolver.setBackground(new java.awt.Color(0, 0, 0));
         btnVolver.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         btnVolver.setForeground(new java.awt.Color(255, 255, 255));
         btnVolver.setText("Volver");
-        jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 130, 40));
+        jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 630, 130, 40));
         jPanel1.add(jlabelidpersona, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 120, 20));
         jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 90, -1, -1));
-        jPanel1.add(txtdescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 480, 160, -1));
+        jPanel1.add(txtdescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 600, 160, -1));
 
         jLabel11.setText("Total:");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, -1, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 640, -1, -1));
 
         jLabel1.setText("ID:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
-        jPanel1.add(txtidproducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, -1));
+        jPanel1.add(txtidproducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 100, -1));
 
         btnbuscarproducto.setText("Buscar");
-        jPanel1.add(btnbuscarproducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, -1, -1));
+        jPanel1.add(btnbuscarproducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, -1, -1));
 
         tblPROD.setBorder(new javax.swing.border.MatteBorder(null));
         tblPROD.setModel(new javax.swing.table.DefaultTableModel(
@@ -144,7 +144,7 @@ public class RFacturas_view extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 

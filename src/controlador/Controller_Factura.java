@@ -1,6 +1,6 @@
 package controlador;
 
-import vistas.Factura_View;
+import vistas.Factura_Viewer;
 import vistas.Login_View;
 import vistas.RFacturas_view;
 
@@ -8,16 +8,18 @@ import vistas.RFacturas_view;
  *
  * @author joelu
  */
-public class Controller_Factura {
-    Factura_View facturaview;
+public class Controller_Factura{
+    private Factura_Viewer facturaviewer;
 
-    public Controller_Factura(Factura_View facturaview) {
-        this.facturaview = facturaview;
+    public Controller_Factura(Factura_Viewer facturaview) {
+        this.facturaviewer = facturaview;
     }
     
     public void iniciarcontrol(){
-        facturaview.setVisible(true);
-        facturaview.getBtnCrear().addMouseListener(new java.awt.event.MouseAdapter() {
+        facturaviewer.setTitle("");
+        facturaviewer.setVisible(true);
+        facturaviewer.setLocationRelativeTo(null);
+        facturaviewer.getBtnCrear().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 RFacturas_view rl = new RFacturas_view();

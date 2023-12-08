@@ -147,6 +147,16 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="listarPersonas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarPersonasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:persona" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="registrarTipoPago">
 <xs:sequence>
 <xs:element name="idTipoPago" type="xs:int" minOccurs="0"/>
@@ -166,35 +176,6 @@
 <xs:element name="descrip" type="xs:string" minOccurs="0"/>
 <xs:element name="id_tipo_pago" type="xs:int" minOccurs="0"/>
 <xs:element name="tipo" type="xs:string" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarPersonas">
-<xs:sequence/>
-</xs:complexType>
-
-<xs:complexType name="listarPersonasResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:persona" minOccurs="0" maxOccurs="unbounded"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="registrarCompetenciaRol">
-<xs:sequence>
-<xs:element name="idRol" type="xs:int"/>
-<xs:element name="nombreRol" type="xs:string" minOccurs="0"/>
-<xs:element name="estadoRol" type="xs:boolean"/>
-<xs:element name="idCompetencia" type="xs:int"/>
-<xs:element name="nombreCompetencia" type="xs:string" minOccurs="0"/>
-<xs:element name="estadoCompetencia" type="xs:boolean"/>
-<xs:element name="idClasificacion" type="xs:int"/>
-<xs:element name="grupoClasificacion" type="xs:string" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="registrarCompetenciaRolResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 
@@ -236,6 +217,25 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="registrarCompetenciaRol">
+<xs:sequence>
+<xs:element name="idRol" type="xs:int"/>
+<xs:element name="nombreRol" type="xs:string" minOccurs="0"/>
+<xs:element name="estadoRol" type="xs:boolean"/>
+<xs:element name="idCompetencia" type="xs:int"/>
+<xs:element name="nombreCompetencia" type="xs:string" minOccurs="0"/>
+<xs:element name="estadoCompetencia" type="xs:boolean"/>
+<xs:element name="idClasificacion" type="xs:int"/>
+<xs:element name="grupoClasificacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarCompetenciaRolResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="buscarP">
 <xs:sequence>
 <xs:element name="dni" type="xs:string" minOccurs="0"/>
@@ -260,18 +260,6 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="buscarRUCProveedorPorID">
-<xs:sequence>
-<xs:element name="idProveedor" type="xs:int"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="buscarRUCProveedorPorIDResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
-
 <xs:complexType name="loginUsuario">
 <xs:sequence>
 <xs:element name="nombreUsuario" type="xs:string" minOccurs="0"/>
@@ -280,6 +268,18 @@
 </xs:complexType>
 
 <xs:complexType name="loginUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarRUCProveedorPorID">
+<xs:sequence>
+<xs:element name="idProveedor" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarRUCProveedorPorIDResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:string" minOccurs="0"/>
 </xs:sequence>
@@ -373,23 +373,11 @@
 <xs:complexType name="itemFactura">
 <xs:sequence>
 <xs:element name="cantidad" type="xs:int"/>
-<xs:element name="id_fcatura" type="tns:factura" minOccurs="0"/>
+<xs:element name="id_fcatura" type="xs:int"/>
 <xs:element name="id_item_factura" type="xs:int"/>
-<xs:element name="id_producto" type="tns:producto" minOccurs="0"/>
+<xs:element name="id_producto" type="xs:int"/>
 <xs:element name="precio" type="xs:double"/>
 <xs:element name="subtotal" type="xs:double"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="factura">
-<xs:sequence>
-<xs:element name="descuento" type="xs:double" minOccurs="0"/>
-<xs:element name="fecha" type="xs:dateTime" minOccurs="0"/>
-<xs:element name="id_factura" type="xs:int" minOccurs="0"/>
-<xs:element name="id_persona" type="xs:int"/>
-<xs:element name="id_tipo_pago" type="xs:int"/>
-<xs:element name="ruc" type="xs:string" minOccurs="0"/>
-<xs:element name="total" type="xs:double" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 
