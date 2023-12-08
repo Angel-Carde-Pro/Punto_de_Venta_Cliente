@@ -28,6 +28,24 @@
 <message name="estadorolResponse">
 <part name="parameters" element="tns:estadorolResponse"/>
 </message>
+<message name="buscarGrupoClasificacionPorID">
+<part name="parameters" element="tns:buscarGrupoClasificacionPorID"/>
+</message>
+<message name="buscarGrupoClasificacionPorIDResponse">
+<part name="parameters" element="tns:buscarGrupoClasificacionPorIDResponse"/>
+</message>
+<message name="buscarRUCProveedorPorID">
+<part name="parameters" element="tns:buscarRUCProveedorPorID"/>
+</message>
+<message name="buscarRUCProveedorPorIDResponse">
+<part name="parameters" element="tns:buscarRUCProveedorPorIDResponse"/>
+</message>
+<message name="buscarProductoPorId">
+<part name="parameters" element="tns:buscarProductoPorId"/>
+</message>
+<message name="buscarProductoPorIdResponse">
+<part name="parameters" element="tns:buscarProductoPorIdResponse"/>
+</message>
 <message name="registrarCompetenciaRol">
 <part name="parameters" element="tns:registrarCompetenciaRol"/>
 </message>
@@ -111,6 +129,18 @@
 <input wsam:Action="http://ws/peticiones/estadorolRequest" message="tns:estadorol"/>
 <output wsam:Action="http://ws/peticiones/estadorolResponse" message="tns:estadorolResponse"/>
 </operation>
+<operation name="buscarGrupoClasificacionPorID">
+<input wsam:Action="http://ws/peticiones/buscarGrupoClasificacionPorIDRequest" message="tns:buscarGrupoClasificacionPorID"/>
+<output wsam:Action="http://ws/peticiones/buscarGrupoClasificacionPorIDResponse" message="tns:buscarGrupoClasificacionPorIDResponse"/>
+</operation>
+<operation name="buscarRUCProveedorPorID">
+<input wsam:Action="http://ws/peticiones/buscarRUCProveedorPorIDRequest" message="tns:buscarRUCProveedorPorID"/>
+<output wsam:Action="http://ws/peticiones/buscarRUCProveedorPorIDResponse" message="tns:buscarRUCProveedorPorIDResponse"/>
+</operation>
+<operation name="buscarProductoPorId">
+<input wsam:Action="http://ws/peticiones/buscarProductoPorIdRequest" message="tns:buscarProductoPorId"/>
+<output wsam:Action="http://ws/peticiones/buscarProductoPorIdResponse" message="tns:buscarProductoPorIdResponse"/>
+</operation>
 <operation name="registrarCompetenciaRol">
 <input wsam:Action="http://ws/peticiones/registrarCompetenciaRolRequest" message="tns:registrarCompetenciaRol"/>
 <output wsam:Action="http://ws/peticiones/registrarCompetenciaRolResponse" message="tns:registrarCompetenciaRolResponse"/>
@@ -186,6 +216,33 @@
 </output>
 </operation>
 <operation name="estadorol">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="buscarGrupoClasificacionPorID">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="buscarRUCProveedorPorID">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="buscarProductoPorId">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

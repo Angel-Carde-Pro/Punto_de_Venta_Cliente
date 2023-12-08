@@ -1,5 +1,6 @@
 package controlador;
 
+import java.awt.event.MouseEvent;
 import vistas.*;
 import ws.Peticiones;
 import ws.Peticiones_Service;
@@ -30,5 +31,16 @@ public class Controller_Main {
                 cp1.IniciarControl();
             }
         });
+        
+        main_View.getjButtonFac().addMouseListener( new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                Factura_View p2 = new Factura_View();
+                Controller_Factura control = new Controller_Factura(p2);
+                control.iniciarcontrol();
+            }
+        });
     }
+   
+     
 }
