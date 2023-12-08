@@ -18,8 +18,8 @@
     </target>
     <target name="wsimport-client-peticiones" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/peticiones"/>
-        <property name="wsdl-peticiones" location="xml-resources/web-service-references/peticiones/wsdl/localhost_8080/Punto_de_Venta_Servidor/peticiones.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/peticiones" destdir="${build.generated.dir}/jax-wsCache/peticiones" wsdl="${wsdl-peticiones}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Punto_de_Venta_Servidor/peticiones?WSDL" xnocompile="true" xendorsed="true">
+        <property name="wsdl-peticiones" location="xml-resources/web-service-references/peticiones/wsdl/localhost_8080/Sistema_Facturacion/peticiones.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/peticiones" destdir="${build.generated.dir}/jax-wsCache/peticiones" wsdl="${wsdl-peticiones}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Sistema_Facturacion/peticiones?WSDL" xnocompile="true" xendorsed="true">
             <depends file="${wsdl-peticiones}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/peticiones"/>
         </wsimport>

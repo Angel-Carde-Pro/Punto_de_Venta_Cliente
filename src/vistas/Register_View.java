@@ -39,10 +39,6 @@ public class Register_View extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         btnVolver = new javax.swing.JButton();
-        jlabelShowPw1 = new javax.swing.JLabel();
-        jlabelDismissPw1 = new javax.swing.JLabel();
-        jlabelShowPw2 = new javax.swing.JLabel();
-        jlabelDismissPw2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,10 +55,10 @@ public class Register_View extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 80, -1));
 
         jLabel5.setText("Nombre De Usuario:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 120, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 120, -1));
 
         jLabel6.setText("Contraseña:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 370, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, -1, -1));
 
         jLabel7.setText("Rol:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 450, -1, -1));
@@ -111,10 +107,6 @@ public class Register_View extends javax.swing.JFrame {
         btnVolver.setForeground(new java.awt.Color(255, 255, 255));
         btnVolver.setText("Volver");
         jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 510, 130, 40));
-        jPanel1.add(jlabelShowPw1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 20, 20));
-        jPanel1.add(jlabelDismissPw1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 20, 20));
-        jPanel1.add(jlabelShowPw2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, 20, 20));
-        jPanel1.add(jlabelDismissPw2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, 20, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -269,10 +261,6 @@ public class Register_View extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel jlabelDismissPw1;
-    private javax.swing.JLabel jlabelDismissPw2;
-    private javax.swing.JLabel jlabelShowPw1;
-    private javax.swing.JLabel jlabelShowPw2;
     private javax.swing.JLabel lblmensajeerror;
     private javax.swing.JTextField txtCedula;
     private javax.swing.JTextField txtDirreccion;
